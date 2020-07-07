@@ -4,7 +4,7 @@
 </head>
 <body>
     <h1>Create account</h1>
-    <form action='usercontroller.php' method='post' enctype="multipart/form-data" target='_self'>
+    <form action='usercontroller' method='post' enctype="multipart/form-data" target='_self'>
     <label for='firstname'>First name</label><br>
     <input type='text' id='firstname' name='firstname' placehoder='first name'><br>
     <label for='lastname'>Last name</label><br>

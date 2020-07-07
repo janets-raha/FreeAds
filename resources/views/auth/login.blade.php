@@ -4,7 +4,7 @@
 </head>
 <body>
     <h1>Login</h1>
-    <form action='usercontroller.php' method='post' enctype="multipart/form-data" target='_self'>
+    <form action='usercontroller' method='post' enctype="multipart/form-data" target='_self'>
     <label for='pseudo'>Pseudo</label><br>
     <input type='text' id='pseudo' name='pseudo' placehoder='pseudo'><br>
     <label for='email'>Email</label><br>

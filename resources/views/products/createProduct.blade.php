@@ -4,7 +4,8 @@
 </head>
 <body>
     <h1>Product for sale</h1>
-    <form action='productcontroller.php' method='post' enctype="multipart/form-data" target='_self'>
+    <form action='productcontroller' method='post' enctype="multipart/form-data" target='_self'>
+    {{@csrf_field()}}<br>
     <label for='name'>Name of product</label><br>
     <input type='text' id='name' name='name' placehoder='my_product'><br>
     <label for="category">Choose a category:</label>
@@ -27,9 +28,9 @@
         <option value="fair">fair</option>
         <option value="salvage">salvage</option>
     </select><br>
-    <label for='postalcode'>Location</label><br>
+    <label for='postalcode'>Postal code</label><br>
     <input type='text' pattern="[0-9]{5}" name="postalcode"><br>
-        <label for="price">Price</label><br>
+    <label for="price">Price</label><br>
     <input type='number' id='price' name='price' placehoder='price'><br>
     <input type='submit' name='submit' value='submit'><br>
     </form>

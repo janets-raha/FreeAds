@@ -15,19 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 /* route for products */
 
-Route::get('/products.createproduct', function () {
-    return view('products.createProduct');
-});
-
-Route::view('productview', '/products.createproduct');
+Route::view('product', '/products.createProduct');
 Route::post('productcontroller', 'ProductsController@product');
 
-/* route for users 
+/* route for users */
 
-Route::view('userview', '/auth.login');
+Route::view('user', '/auth.login');
 Route::post('usercontroller','UsersController@account');
 
-
+/*
 Route::get('/auth.register', function () {
     return view('auth.register');
 });
