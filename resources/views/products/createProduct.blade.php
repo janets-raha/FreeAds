@@ -4,7 +4,7 @@
 </head>
 <body>
     <h1>Product for sale</h1>
-    <form action='createProduct.php' method='post' enctype="multipart/form-data" target='_self'>
+    <form action='productcontroller.php' method='post' enctype="multipart/form-data" target='_self'>
     <label for='name'>Name of product</label><br>
     <input type='text' id='name' name='name' placehoder='my_product'><br>
     <label for="category">Choose a category:</label>

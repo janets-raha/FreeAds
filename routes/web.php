@@ -13,9 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/* route for products */
+
 Route::get('/products.createproduct', function () {
     return view('products.createProduct');
 });
+
+Route::view('productview', '/products.createproduct');
+Route::post('productcontroller', 'ProductsController@product');
+
+/* route for users 
+
+Route::view('userview', '/auth.login');
+Route::post('usercontroller','UsersController@account');
+
 
 Route::get('/auth.register', function () {
     return view('auth.register');
@@ -23,5 +34,5 @@ Route::get('/auth.register', function () {
 
 Route::get('/auth.login', function () {
     return view('auth.login');
-});
+});*/
 
