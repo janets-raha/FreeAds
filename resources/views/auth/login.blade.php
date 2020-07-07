@@ -11,7 +11,7 @@
     <input type='email' id='email' name='email' placehoder='email@email.com'><br>
     <label for='pwd'>Password</label><br>
     <input type='password' id='pwd' name='pwd' placehoder='password'><br>
-    <input type='submit' name='submit' value='Valider'><br>
+    <input type='submit' name='submit' value='submit'><br>
     </form>
 </body>
 </html>

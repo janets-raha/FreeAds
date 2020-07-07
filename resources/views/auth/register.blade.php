@@ -26,7 +26,7 @@
     <label for='city'>City</label><br>
     <input type='text' id='city' name='city' placehoder='city'><br>
     <input type="hidden" name="status_seller" value="1">
-    <input type='submit' name='submit' value='Valider'><br>
+    <input type='submit' name='submit' value='submit'><br>
     </form>
 </body>
 </html>

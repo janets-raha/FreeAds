@@ -18,7 +18,7 @@
     <textarea id='description' name="description" rows="10" cols="30"></textarea><br><br>
     <label for="image">Add a photo</label>
     <input type="file" id="image" name="image" ><br>
-    <label for="condition">Condition</label><br>
+    <label for="condition">Condition</label>
     <select id="condition" name="condition">
         <option value="new">new</option>
         <option value="like_new">like new</option>
@@ -31,7 +31,7 @@
     <input type='text' pattern="[0-9]{5}" name="postalcode"><br>
         <label for="price">Price</label><br>
     <input type='number' id='price' name='price' placehoder='price'><br>
-    <input type='submit' name='submit' value='Valider'><br>
+    <input type='submit' name='submit' value='submit'><br>
     </form>
 </body>
 </html>
