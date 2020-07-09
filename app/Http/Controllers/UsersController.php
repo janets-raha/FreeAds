@@ -10,7 +10,7 @@ use App\User;
 
 class UsersController extends Controller
 {
-    function account(Request $req) {
+    function store(Request $req) {
         //return $req->input();
         $user = new User;
         $user->first_name = $req->first_name;
@@ -31,5 +31,20 @@ class UsersController extends Controller
          $user = DB::table('users')->get();
          return view('home',['users'=>$user]);
      }
+
+    function logs(Request $req) {
+        //return $req->input();
+       // print_r($req->input());
+        $email = $req->input('email');
+        $password = $req->input ('password');
+        $data = DB::select("SELECT id FROM users WHERE email=? AND password=?" ,[$email, $password]);
+
+        if(count($data)) {
+            echo "You have logged in successfully";
+        } else {
+            echo "Please enter correct email and password";
+        }
+    }
+
 
 }
