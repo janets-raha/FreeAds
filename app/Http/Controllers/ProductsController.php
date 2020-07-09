@@ -25,10 +25,8 @@ class ProductsController extends Controller
     function list() {
        //$data = Products::all();
        //return view('home',['data'=>$data]);
-        $products = DB::table('products')->get();
+        $products = DB::table('products')->paginate(4);
         return view('home',['products'=>$products]);
-
-
     }
 
 }

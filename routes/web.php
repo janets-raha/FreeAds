@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 //Route::view('home', '/home');
 Route::get('home','ProductsController@list');
 
+
 /* route for products */
 
 Route::view('product', '/products.createProduct');
