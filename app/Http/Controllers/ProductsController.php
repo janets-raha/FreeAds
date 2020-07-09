@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Products;
+
 
 class ProductsController extends Controller
 {
@@ -18,7 +20,15 @@ class ProductsController extends Controller
         $product->postalcode = $req->postalcode;
         $product->image = $req->file('image')->store('public\images');
         echo $product->save();
+    }
+
+    function list() {
+       //$data = Products::all();
+       //return view('home',['data'=>$data]);
+        $products = DB::table('products')->get();
+        return view('home',['products'=>$products]);
 
 
     }
+
 }
