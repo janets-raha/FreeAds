@@ -26,8 +26,11 @@ Route::post('productcontroller', 'ProductsController@product');
 
 /* route for users */
 
-Route::view('user', '/auth.login');
+Route::view('register', '/auth.register');
 Route::post('usercontroller','UsersController@account');
+//Route::post('/store', 'register');
+
+Route::view('login', '/auth.login');
 
 /*
 Route::get('/auth.register', function () {

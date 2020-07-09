@@ -23,16 +23,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME </a>
+                        <a class="nav-link" href="{{ url('/home') }}">HOME </a>
                     </li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">+ POST ADS</a>
+                        <a class="nav-link" href="{{ url('/product') }}">+ POST ADS</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">LOG IN</a>
+                        <a class="nav-link" href="{{ url('/login') }}">LOG IN</a>
                     </li>
                   </ul>
             </div>

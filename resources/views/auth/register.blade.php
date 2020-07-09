@@ -25,8 +25,9 @@
     <input type='text' pattern="[0-9]{5}" name="postalcode"><br>
     <label for='city'>City</label><br>
     <input type='text' id='city' name='city' placehoder='city'><br>
-    <input type="hidden" name="status_seller" value="1">
-    <input type='submit' name='submit' value='submit'><br>
+    <input type='hidden' name='status_seller' value='1'>
+    <input type='text' id='token' name='token' value='{{@csrf_field()}}'><br>
+    <input type='hidden' name='submit' value='submit'><br>
     </form>
 </body>
 </html>
