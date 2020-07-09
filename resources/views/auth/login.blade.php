@@ -12,7 +12,7 @@
     {{@csrf_field()}}<br>
     <label for='pwd'>Password</label><br>
     <input type='password' id='pwd' name='pwd' placehoder='password'><br>
-    <input type='submit' name='submit' value='submit'><br>
+    <input type='submit' name='login' value='login'><br>
     </form>
 </body>
 </html>

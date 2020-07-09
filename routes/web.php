@@ -28,7 +28,6 @@ Route::post('productcontroller', 'ProductsController@product');
 
 Route::view('register', '/auth.register');
 Route::post('usercontroller','UsersController@account');
-//Route::post('/store', 'register');
 
 Route::view('login', '/auth.login');
 
