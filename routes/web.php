@@ -32,13 +32,3 @@ Route::post('usercontroller','UsersController@store');
 Route::view('login', '/auth.login');
 Route::post('logs','UsersController@logs');
 
-
-/*
-Route::get('/auth.register', function () {
-    return view('auth.register');
-});
-
-Route::get('/auth.login', function () {
-    return view('auth.login');
-});*/
-
